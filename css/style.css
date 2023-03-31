@@ -334,7 +334,6 @@ a:hover{
     display: flex; 
     flex-direction: column;  
     margin-top: 50px;
-    margin-left: 8px;
     width: 100%;
     
 }
@@ -356,7 +355,7 @@ a:hover{
     flex-direction: column;
     background-color: #FFFFFF;
     width: 100%;
-    height: 439px;
+    height: 450px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     
@@ -384,17 +383,18 @@ a:hover{
 
 .footer{
     display: flex;
+    justify-content: space-between;
     flex-direction:row;
     width: 100%;
     height: 163px;
     background: #F2F2F2;
-    margin-top: 80px;
+    margin-top: 60px;
     margin-bottom: 15px;
     align-items:flex-start
 }
 
 .list-footer{
-    width: 446.67px;
+    width: 300px;
     height: 163px;
 
 }
@@ -429,9 +429,9 @@ li:first-child{
 .main-container {
     width: 100%;
     max-width: 1024px;
-    padding: 0 50px;
+    padding: 0 30px;
     box-sizing: border-box;
-    height: 215vh;
+ 
 }
 
 /* header */
@@ -527,6 +527,7 @@ h1{
 .section-activite{
     flex-direction: column;
     width: 100%;  
+
  }
 
 .activites-card{
@@ -559,10 +560,11 @@ h1{
     width:100%;
     height: 163px;
     margin-top: 30px;
+    justify-content: space-between
 
     }
     .list-footer{
-    width: 288px;
+    width: 270px;
     height: 163px;
     }
         
@@ -576,7 +578,10 @@ h1{
     max-width: 786px;
     padding: 0px;
     box-sizing: border-box;
-    height: 580vh;
+    height: 560vh;
+}
+body{
+    margin: 0px;
 }
 
 :root {
@@ -631,33 +636,6 @@ h1{
     font-size: 20px;
 }
 
-/* search button */
-.fa-magnifying-glass{
-    color: #FFFFFF;
-    font-size: large;
-    text-align: center;
-}
-
-.searchMobil {
-    display: block;
-}
-
-.searchMobil button{
-    background-color: #0065FC;
-    font-size: 1px;
-    border-radius: 15px 15px 15px 15px;
-    width: 49%;
-    height: 49px;
-}
-
-.SearchDisktop {
-    display: none;   
-}
-
-.info{
-    margin-top: 20px;
-    margin-bottom: 0px; 
-}
 .heber{
     width: 50%;
     border-bottom: 2px solid #F2F2F2;
@@ -684,6 +662,7 @@ h1{
     border-top: hidden;
     border-bottom: 2px solid  #0065FC;
 }
+/* search button */
 
 .fa-magnifying-glass{
     color: #FFFFFF;
@@ -693,6 +672,13 @@ h1{
 
 .searchMobil {
     display: block;
+}
+
+.SearchDisktop {
+    display: none;  
+}
+.search-bar{
+    margin-top: 25px;
 }
 
 .search-bar input {
@@ -711,10 +697,6 @@ h1{
 }
 .fa-location-dot {
   width: 10px;
-}
-
-.SearchDisktop {
-    display: none;  
 }
 
 /* Filter mobile */
@@ -768,17 +750,15 @@ font-size:14px;
 
 .infoBar{
     padding: 0px;
-  padding-left: 5px;
+    padding-left: 10px;
 }
 
 .infoBar p{
     font-size: 14px;
-    
 }
 
 .iconInfo {
     border: solid 1px #F2F2F2;
-    font-size: 10px;
     width: 18px ;
     height:18px ;
     border-radius: 50%;
@@ -788,9 +768,10 @@ font-size:14px;
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     gap: 4px;
 }
+
 .fa-info{
     margin-left: 7px;
     margin-top: 3px;
@@ -815,17 +796,16 @@ font-size:14px;
 
 .populaires {
     width: 100%;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 0px 0px 0px 5px ;
 }
-.card{
-    margin-left: 15px;
-}
+
 .populaires-cards {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: #F2F2F2;
+    align-items: center;
     width: 100%;
     padding-bottom: 40px;
 }
@@ -842,7 +822,7 @@ font-size:14px;
 .populaires-cards .card {
     display: flex;
     width: 90%;
-    margin-top: 33px;
+    margin-top: 10px;
 }
 
 .populaires-cards img {
@@ -886,8 +866,15 @@ font-size:14px;
 
 .rang1{
     flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
     width: 100%;
 }
+
+#hebergVille{
+    margin: 0px 0px 15px 8px;
+};
+
 
 .heberg-card img{
     border: 5px solid #FFFFFF;
@@ -901,7 +888,7 @@ font-size:14px;
 
 .heberg-card{
     width: 95%;
-    margin-left: 10px;
+    margin-left: 0px;
 }
 .infoHotel .card-subtitle {
     font-size: 13px;
@@ -918,9 +905,16 @@ font-size:14px;
 
 .section-activite{
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    margin-left: 10px;
-    margin-top: 40px;
+    margin-left: 0px;
+    margin-top: 50px;
+}
+.section-activite h2 {
+align-self: self-start;
+}
+.title-activ { 
+    font-size: 14px;
 }
 
 .activites-card{
@@ -932,31 +926,23 @@ font-size:14px;
     width: 90%;
     height: 100%;
     margin-top: 0px;
-    margin-left: 10px;
-
+    margin-left: 0px;
 }
-.section-title {
-    margin: 15px;
+.section-title{
+  margin: 0px 0px 15px 15px;
 }
 .activites {
-
     width: 100%;
-    height:270px;
-
-    }
+    height: 255px;
+}
 .activites img{
     width: 100%;
     height: 200px;
     object-fit: cover;
-
-    }   
-
+}   
 .activites div{  
-
     width: 100%;
-    height: 59px;
-
-    }   
+}   
 /* Footer */
 
 .footer{
@@ -964,7 +950,8 @@ font-size:14px;
     width:100%;
     height: 400px ;
     flex-direction: column;
-    padding: 30px;
+    align-items: center;
+    padding: 0px;
     margin-top: 25px;
     background-color: #F2F2F2;
     }
