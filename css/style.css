@@ -278,6 +278,7 @@ a:hover{
 .SeeMore {
     margin-top: 40px;
     font-size: 1.125em;
+    font-weight: bolder;
 }
 .SeeMore a{
    
@@ -571,7 +572,7 @@ h1{
   }  
 
 /* Small devices (phones, less than 768px) */
-@media  (max-width: 767.98px) {
+@media  (max-width: 768px) {
 
 .main-container {
     width: 100%;
@@ -687,7 +688,7 @@ h1{
    font-size: 16px;
 }
 .search-bar  button {
-    border-radius: 15px;
+    border-radius: 0px 15px 15px 0px;
     width: 49px;
     height: 49px;
     padding: 0px;
@@ -876,6 +877,7 @@ font-size:14px;
 }
 
 
+
 .heberg-card img{
     border: 5px solid #FFFFFF;
     border-radius: 20px 20px 0px 0px;
@@ -885,7 +887,6 @@ font-size:14px;
     object-fit:cover;
 } 
 
-
 .heberg-card{
     width: 95%;
     margin-left: 0px;
@@ -894,11 +895,12 @@ font-size:14px;
     font-size: 13px;
 }
 
-.SeeMore {
+.SeeMore{
     margin-left: 10px;
     margin-top: 30px;
     margin-bottom: 0px;
     font-size: 18px;
+    
 } 
 
 /* Activetes */
