@@ -1,7 +1,6 @@
 /****** General ***********/
 * {
-    font-family: 'Raleway', sans-serif;
-    
+    font-family: 'Raleway', sans-serif;  
 }
 
 :root {
@@ -14,9 +13,6 @@
     color: var(--main-color);
 }
 
-p{
-    display: flex;
-}
 h3, li{
     margin: 0px;
 }
@@ -34,13 +30,11 @@ body {
     justify-content: space-between;  
 }
 
-
 .logo{
     width: 61.09px;
     height: 19px;
     left: 50px;
     margin-top: 25px;
-
 }
 
 .menu{
@@ -151,7 +145,7 @@ a:hover{
     border-radius: 25px;
     border: 2px solid #F2F2F2;
     font-weight: 700;
-    font-size: 17px;
+    font-size: 1.063em;
     padding: 10px 15px 10px 15px;
 }
 
@@ -164,8 +158,6 @@ a:hover{
 .filtres button:hover{
     background-color: #DEEBFF;
 }
-
-
 
 .info{
     display: flex;
@@ -181,16 +173,20 @@ a:hover{
 }
 .iconInfo {
     border: solid 1px #F2F2F2;
-    font-size: 10px;
+    font-size:0.625em ;
     width: 20px ;
     height:20px ;
     border-radius: 50%;
     margin-top: 2px;
 }
 
+p{
+    display: flex;
+}
+
 .section-title {
     margin: 0;
-    font-size: 22px;  
+    font-size: 1.375em;  
 }
 
 .card {
@@ -205,7 +201,7 @@ a:hover{
 }
 
 .card-title {
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .euro {
@@ -286,7 +282,7 @@ a:hover{
 }
 
 .card-subtitle {
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .SeeMore {
@@ -440,14 +436,13 @@ body{
     box-sizing: border-box;
 }
 
-
 /* header */
 h1{
-    font-size: 22px;
+    font-size: 1.375em;
 }
 
 .infoBar p{
-    font-size: 16px;
+    font-size: 1em;
 }
 
 .filtres{
@@ -461,7 +456,7 @@ h1{
 .filtres button{
     align-items: center;
     gap: 5px;
-    font-size: 16px ;
+    font-size: 1em ;
     font-weight: 700;
     height: 45px;
 }
@@ -505,18 +500,18 @@ h1{
 }
 
 .populaires-cards .card-title {
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .populaires-cards .card-subtitle {
-    font-size: 13px;
+    font-size: 0.813em;
 }
 .infoHotel{
     width: 100%;
 }
 
 .infoHotel .card-subtitle {
-    font-size: 13px;
+    font-size:  0.813em;
 }
 
 /* Activites */
@@ -547,7 +542,7 @@ h1{
     margin-top: 0px;
     margin-left: 8px;
     align-items: center;
-    font-size:15px;
+    font-size: 0.938em;
 }
 
     /* footer  */
@@ -626,11 +621,6 @@ body{
     border-bottom: 2px solid  #0065FC;
 }
 
-h1{
-    font-size: 22px;
-    text-align: center;
-}
-
 .heber{
     width: 50%;
     border-bottom: 2px solid #F2F2F2;
@@ -681,9 +671,9 @@ width: 100%;
 }
 
 .search-bar input {
-    width: 65%;
+    width: 70%;
     border-right: none;
-   font-size: 16px;
+   font-size: 1em;
 }
 .search-bar  button {
     border-radius: 0px 15px 15px 0px;
@@ -709,7 +699,7 @@ margin-left: 0px;
 .buttonMobile button{
    
     width: 40%;
-    font-size:14px;
+    font-size: 0.875em;
     padding: 5px 0px 5px 5px;
     height: 50px;
     
@@ -728,16 +718,26 @@ margin-left: 0px;
 
 
 .infoBar{
-     padding: 0px;
+     padding: 0px;  
 }
 
-.infoBar p{
-    font-size: 15px;
+.infoBar p {
+    font-size: 0.938em;
     display: block;
     text-align: center;
-   
 }
 
+
+ h1 {
+    font-size: 1.375em;
+}
+
+.titre h1{
+    display: flex;   
+    justify-content: center;
+    padding: 0px 0px 0px 15px;
+
+}
 
 .iconInfo {
     border: solid 1px #F2F2F2;
@@ -745,7 +745,6 @@ margin-left: 0px;
     height:18px ;
     border-radius: 80%;
     margin-top: 0px;
- 
 }
     
 .info{
@@ -755,7 +754,6 @@ margin-left: 0px;
     margin: 0px;
     padding: 20px 0px 5px 0px;
     width: 100%;
-
 }
 
 .info p{
@@ -836,12 +834,12 @@ margin-left: 0px;
 .populaires-cards .card-title {
     margin-top: 10px;
     margin-bottom: 4px;
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .populaires-cards .card-subtitle {
     margin: 0;
-    font-size: 13px;
+    font-size: 0.813em;
 }
 .populaires-cards .card-rating {
     margin-bottom: 5px;
@@ -852,8 +850,7 @@ margin-left: 0px;
 .hebergements { 
     width: 100%;
     margin-top: 10px;
-    padding-bottom: 0px;
-    
+    padding-bottom: 0px;  
 }
 
 .rang1{
@@ -897,14 +894,14 @@ margin-left: 0px;
     margin-left: 0px;
 }
 .infoHotel .card-subtitle {
-    font-size: 13px;
+    font-size: 0.813em;
 }
 
 .SeeMore{
     margin-left: 10px;
     margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 18px; 
+    font-size: 1.125em; 
 } 
 
 /* Activetes */
@@ -920,7 +917,7 @@ margin-left: 0px;
 align-self: self-start;
 }
 .title-activ { 
-    font-size: 14px;
+    font-size: 0.875em;
 }
 
 .activites-card{
