@@ -1,37 +1,41 @@
 /****** General ***********/
 * {
     font-family: 'Raleway', sans-serif;
+    
 }
 
 :root {
     --main-color: #0065FC;
     --main-bg-color: #F2F2F2;
-    --filter-bg-color: #DEEBFF;
-    
+    --filter-bg-color: #DEEBFF;  
 }
 
 .fa-solid {
     color: var(--main-color);
 }
 
-body {
+p{
     display: flex;
-    justify-content: center;
 }
-
-.main-container {
+h3, li{
+    margin: 0px;
+}
+body {
     width: 100%;
     max-width: 1440px;
     padding: 0 50px;
+    margin: 0px;
     box-sizing: border-box;
 }
 
+
+
 /* header */
-.header{
-    
+.header{ 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between;  
 }
+
 
 .logo{
     width: 61.09px;
@@ -127,20 +131,23 @@ a:hover{
 .filtres{
     display: flex;
     flex-direction: row;
-    margin-top: 20px;
+    padding-top: 20px;
     font-weight: 700;
     font-size: 1em;
+    gap: 15px;
 }
 .filtres p{
-    margin-right: 20px;
-    margin-top: 20px;
+    align-items: center;
+   
 }
 
 .filtres .fa-solid {
     padding-right: 10px;
 }
 .filtres button{
-
+    display: flex;
+    flex-direction: row;
+    justify-content:left;
     background-color: white;
     margin: 10px;
     border-radius: 25px;
@@ -150,9 +157,17 @@ a:hover{
     padding: 10px 15px 10px 15px;
 }
 
+.buttonMobile{
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+}
+
 .filtres button:hover{
     background-color: #DEEBFF;
 }
+
+
 
 .info{
     display: flex;
@@ -356,25 +371,20 @@ a:hover{
     flex-direction: column;
     background-color: #FFFFFF;
     width: 100%;
-    height: 450px;
+    height: 430px;
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     
 }
 .activites img{
     width: 100%;
-    height: 380px;
+    height: 23.75em;
     object-fit: cover;
     border-radius: 20px 20px 0px 0px;
 }
-.activites div{  
-    background: #FFFFFF;
-    border-radius: 0px 0px 20px 20px;
-    width: 100%;
-    margin-top: 0px;
-}
+
 .title-activ {
-    margin-top: 16px;
+    margin-top: 6px;
     margin-left: 20px;
     font-size: 1em;
 }
@@ -387,22 +397,19 @@ a:hover{
     justify-content: space-between;
     flex-direction:row;
     width: 100%;
-    height: 163px;
     background: #F2F2F2;
     margin-top: 60px;
-    margin-bottom: 15px;
     align-items:flex-start
 }
 
 .list-footer{
     width: 300px;
-    height: 163px;
-
 }
 
 .list-footer ul {
     padding-left: 0px;
     margin-left: 24px;
+    margin-bottom: 0px;
 }
 
 .list-footer li{
@@ -427,13 +434,13 @@ li:first-child{
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
  
-.main-container {
+body{
     width: 100%;
     max-width: 1024px;
     padding: 0 30px;
     box-sizing: border-box;
- 
 }
+
 
 /* header */
 h1{
@@ -444,34 +451,20 @@ h1{
     font-size: 16px;
 }
 
-.buttonMobile{
-    display: flex;
-    flex-direction: row;
-    justify-content:left;
-  
-    }
-.buttonMobile button{
-    display: flex;
-    flex-direction: row;
-    justify-content:center;
-    width: 100%;
-    font-size:16px;
+.filtres{
+ flex-direction: column;
+  align-items: start;
+  gap: 10px;
 }
-
+.filtres p{
+    margin-left: 8px;
+}
 .filtres button{
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    text-align:center;
-    background-color: white;
-    margin: 5px;
-    border-radius: 25px;
+    gap: 5px;
     font-size: 16px ;
-    border: 2px solid #F2F2F2;
     font-weight: 700;
-    padding: 2px 8px ;
-    width:100% ;
-    height: 50px;
+    height: 45px;
 }
 
 .filtres .fa-solid {
@@ -538,8 +531,7 @@ h1{
 
 .activites {
     width: 95%;
-    height:270px;
-
+    height: 248px;
     }
 .activites img{
     width: 100%;
@@ -550,8 +542,9 @@ h1{
     }   
      
 .title-activ{
-    margin-top: 10px;
-    margin-left: 10px;
+    margin-top: 0px;
+    margin-left: 8px;
+    align-items: center;
     font-size:15px;
 }
 
@@ -559,14 +552,13 @@ h1{
 .footer{
 
     width:100%;
-    height: 163px;
     margin-top: 30px;
     justify-content: space-between
 
     }
-    .list-footer{
+    
+.list-footer{
     width: 270px;
-    height: 163px;
     }
         
   }  
@@ -574,14 +566,11 @@ h1{
 /* Small devices (phones, less than 768px) */
 @media  (max-width: 768px) {
 
-.main-container {
+body{
     width: 100%;
     max-width: 786px;
     padding: 0px;
     box-sizing: border-box;
-    height: 560vh;
-}
-body{
     margin: 0px;
 }
 
@@ -599,7 +588,7 @@ body{
 
 .logo{
    padding: 15px;
-
+   margin-top: 0px;
 }
 .logoMob{ 
     text-align: center;
@@ -609,6 +598,7 @@ body{
 .heber{
     width: 50%;
     border-bottom: 2px solid #F2F2F2;
+    border-top: none;
     margin-right: 0px;
     font-size: 1em;
     text-align: center;
@@ -622,6 +612,7 @@ body{
 
 .activ{
     width: 50%;
+    border-top: none;
     border-bottom: 2px solid #F2F2F2;
     font-size: 1em;
     text-align: center;
@@ -634,7 +625,8 @@ body{
 }
 
 h1{
-    font-size: 20px;
+    font-size: 22px;
+    text-align: center;
 }
 
 .heber{
@@ -678,12 +670,16 @@ h1{
 .SearchDisktop {
     display: none;  
 }
-.search-bar{
-    margin-top: 25px;
+.search-bar {
+
+justify-content: center;
+margin-top: 15px;
+width: 100%;
+
 }
 
 .search-bar input {
-    width: 60%;
+    width: 65%;
     border-right: none;
    font-size: 16px;
 }
@@ -702,80 +698,73 @@ h1{
 
 /* Filter mobile */
 
-.buttonMobile{
-    display: flex;
-    flex-direction: row;
-    justify-content:left;
-    width: 100%;   
-  }
+.filtres p{ 
+
+width: 30%;
+margin-left: 0px;
+ }
+
 .buttonMobile button{
-width: 100%;
-font-size:14px;
+   
+    width: 40%;
+    font-size:14px;
+    padding: 5px 0px 5px 5px;
+    height: 50px;
+    
 }
 
-.filtres{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 0px;
-    font-weight: 700;
-    font-size: 1em;
-}
-.filtres p{
-    margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
+.filtres .buttonMobile{
+    flex-wrap: wrap;
+    width: 100%; 
+    justify-content: center;
 }
 
 .filtres .fa-solid {
-    padding-right: 6px;
-}
-.filtres button{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    text-align: center;
-    background-color: white;
-    margin:5px;
-    border-radius: 25px;
-    border: 2px solid #F2F2F2;
-    font-weight: 700;
-    padding: 6px 11px 6px 11px;
-    width: 150px;
-    height: 50px;
+    padding-right: 4px;
+    padding-left: 4px;
 }
 
-.filtres button:hover{
-    background-color: #DEEBFF;
-}
 
 .infoBar{
-    padding: 0px;
-    padding-left: 10px;
+     padding: 0px;
 }
 
 .infoBar p{
-    font-size: 14px;
+    font-size: 15px;
+    display: block;
+    text-align: center;
+   
 }
+
 
 .iconInfo {
     border: solid 1px #F2F2F2;
     width: 18px ;
     height:18px ;
-    border-radius: 50%;
-    margin-top: 2px;
+    border-radius: 80%;
+    margin-top: 0px;
+ 
 }
+    
 .info{
-    display: flex;
-    flex-direction: row;
-    margin-top: 20px;
-    margin-bottom: 5px;
-    gap: 4px;
+   display:flex; 
+   flex-direction: row;
+   justify-content: center;
+    margin: 0px;
+    padding: 20px 0px 5px 0px;
+    width: 100%;
+
 }
 
-.fa-info{
-    margin-left: 7px;
-    margin-top: 3px;
+.info p{
+    text-align: left;
+    margin-top: 2px;
+}
+
+.info i{
+   
+    margin: 3px 8px 0px 8px;
+ 
 }
 
 /* hebergements-and-populaires */
