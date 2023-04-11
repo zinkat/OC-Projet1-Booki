@@ -28,8 +28,6 @@ body {
     box-sizing: border-box;
 }
 
-
-
 /* header */
 .header{ 
     display: flex;
@@ -243,7 +241,7 @@ a:hover{
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     height: 220px;
-    width: 100%;
+    width: 30%;
 
 }
 
@@ -263,11 +261,12 @@ a:hover{
 
 .rang1{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    flex-direction: row;
     width: 100%;
     margin-top: 25px;
-    gap: 30px;
+    padding-top: 25px;
+    gap: 20px;
 }
 
 .infoHotel {
@@ -476,6 +475,9 @@ h1{
 }
 .hebergements {
     width: 100%;
+}
+.rang1{
+    padding-top: 0px;
 }
 
 .populaires {
@@ -861,11 +863,25 @@ margin-left: 0px;
     width: 100%;
 }
 
+.order1{
+    order: -1;
+}
+
+.order6{
+    order: 5;
+}
+.order2{
+ 
+    order: -1;
+}
+.order5{ 
+
+    order: 4;
+}
+
 #hebergVille{
     margin: 0px 0px 15px 8px;
 }
-
-
 
 .heberg-card img{
     border: 5px solid #FFFFFF;
@@ -888,8 +904,7 @@ margin-left: 0px;
     margin-left: 10px;
     margin-top: 30px;
     margin-bottom: 0px;
-    font-size: 18px;
-    
+    font-size: 18px; 
 } 
 
 /* Activetes */
